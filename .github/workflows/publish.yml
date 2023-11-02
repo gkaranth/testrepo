@@ -14,9 +14,3 @@ with:
 registry: ghcr.io
 username: gkaranth
 password: Ani@123.com
-
-- name: Build the hello-docker Docker image
-run: |
-       docker build . --tag ghcr.io/gkaranth/hello-docker-gcr-demo:latest
-       docker run ghcr.io/gkaranth/hello-docker-gcr-demo:latest
-       docker push ghcr.io/gkaranth/hello-docker-gcr-demo:latest
