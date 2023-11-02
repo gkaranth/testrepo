@@ -14,3 +14,6 @@ with:
 registry: ghcr.io
 username: gkaranth
 password: Ani@123.com
+
+- name: Build the hello-docker Docker image
+run: npm install express
