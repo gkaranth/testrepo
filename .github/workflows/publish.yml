@@ -11,9 +11,8 @@ steps:
         registry: ghcr.io
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
-        
 - name: Build the hello-docker Docker image
-run: 
+run: |
        docker build . --tag ghcr.io/deselikem/hello-docker-gcr-demo:latest
        docker run ghcr.io/deselikem/hello-docker-gcr-demo:latest
        docker push ghcr.io/deselikem/hello-docker-gcr-demo:latest
