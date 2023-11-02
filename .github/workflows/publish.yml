@@ -2,7 +2,7 @@ name: publish
 on: [push]
 jobs:
 publish-hello-docker-image:
--name: publish docker image
+- name: publish docker image
 runs-on: ubuntu-latest
 
 steps:
