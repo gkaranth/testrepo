@@ -12,7 +12,7 @@ steps:
     username: ${{ github.actor }}
     password: ${{ github.token }}
 - name: Build the hello-docker Docker image
-run: |
+  run: |
        docker build . --tag ghcr.io/gkaranth/hello-docker-gcr-demo:latest
        docker run ghcr.io/gkaranth/hello-docker-gcr-demo:latest
        docker push ghcr.io/gkaranth/hello-docker-gcr-demo:latest
